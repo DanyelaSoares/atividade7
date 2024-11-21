@@ -1,4 +1,8 @@
 # Atividade 7
+## Atividades em React
+
+https://danyelasoares.github.io/atividade7/
+
 
 Este repositório contém uma série de atividades práticas desenvolvidas com React. Cada atividade é implementada como um componente React separado, abordando conceitos importantes como estado (usando `useState`), efeitos (usando `useEffect`), formulários, requisições de API, e manipulação de eventos.
 
