@@ -1,0 +1,241 @@
+/* Estilos globais */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos para os botões das tabs */
+button {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin-right: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Estilo da aba ativa */
+button.active {
+  background-color: #007bff;  /* Cor de fundo azul */
+  color: white;  /* Texto branco */
+  border-color: #007bff;  /* Borda azul */
+  font-weight: bold;  /* Deixa o texto em negrito */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Adiciona uma sombra suave */
+}
+
+/* Estilo para o conteúdo das tabs */
+.tab-content {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: none; /* As tabs ficam ocultas até serem ativadas */
+}
+
+.tab-content.active {
+  display: block; /* Exibe o conteúdo da aba ativa */
+}
+
+/* Estilos adicionais para o layout da lista de dados ou conteúdos */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+h3 {
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+/* index.css */
+
+/* Estilo do modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteúdo do modal */
+.modalContent {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Fechar o modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Estilo da imagem no modal */
+.modalImage {
+  width: 500px;
+  height: auto;
+}
+/* Estilos básicos para os itens da lista */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h3 {
+  color: #007bff;
+}
+
+p {
+  color: #333;
+}
+
+/* Estilos para a galeria de imagens */
+.gallery-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta automaticamente o número de colunas */
+  gap: 15px; /* Espaçamento entre as imagens */
+}
+
+.gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1); /* Efeito de zoom nas imagens ao passar o mouse */
+}
+/* App.css */
+
+/* Estilos gerais para o formulário */
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para mensagens de erro */
+p {
+  color: red;
+  font-size: 14px;
+}
+
+/* Estilo de sucesso, caso você queira */
+.success {
+  color: green;
+  font-size: 14px;
+}
